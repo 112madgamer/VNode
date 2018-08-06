@@ -1,7 +1,7 @@
 FROM openjdk:10-jre-slim
 
 LABEL name "vnode"
-LABEL version "0.0.1"
+LABEL version "0.3.0"
 LABEL maintainer "_112"
 
 WORKDIR /opt/Lavalink
@@ -9,7 +9,7 @@ WORKDIR /opt/Lavalink
 RUN apt-get update \
 && apt-get install -y curl
 
-RUN curl -o Lavalink.jar https://ci.fredboat.com/repository/download/Lavalink_Build/4432:id/Lavalink.jar?guest=1
+RUN curl -o Lavalink.jar https://ci.fredboat.com/repository/download/Lavalink_Build/4919:id/Lavalink.jar?guest=1
 
 EXPOSE 2333
 EXPOSE 9090
